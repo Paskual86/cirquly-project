@@ -37,29 +37,3 @@
     </div>
 
 </div>
-
-<h2>Articles</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Price</th>
-            <th>Create On</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var article in Model)
-        {
-            <tr>
-                <td>@article.Title</td>
-                <td>@article.Price.ToString("C")</td>
-                <td>@article.CreatedDate.ToString("dd MMM yyyy")</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@article.Id" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
