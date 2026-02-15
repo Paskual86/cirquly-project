@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Cirquly", "Project Cirquly.csproj", "{41A2122D-97D3-E78C-4593-82EF311EC472}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41A2122D-97D3-E78C-4593-82EF311EC472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A2122D-97D3-E78C-4593-82EF311EC472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A2122D-97D3-E78C-4593-82EF311EC472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A2122D-97D3-E78C-4593-82EF311EC472}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7F95AAC-0468-477A-9A55-78D483D65393}
+	EndGlobalSection
+EndGlobal

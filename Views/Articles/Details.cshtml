@@ -1,0 +1,38 @@
+@model CirqulyProject.Core.Features.Articles.ViewModels.ArticleViewModel
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                
+                <div class="card-header bg-dark text-white text-center">
+                    <h4 class="mb-0">@Model.Title</h4>
+                </div>
+
+                <div class="card-body">
+                    <p class="fs-5">
+                        <strong>Price:</strong> 
+                        <i class="bi bi-currency-euro"></i>
+                        <span class="badge bg-success fs-6">
+                            @Model.Price.ToString("C")
+                        </span>
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong><br />
+                        @Model.Description
+                    </p>
+
+                    <p class="text-muted">
+                        <strong>Created:</strong> 
+                        @Model.CreatedDate.ToString("dd MMM yyyy")
+                    </p>
+                </div>
+
+                <div class="card-footer text-center">
+                    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
