@@ -20,12 +20,11 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapStaticAssets();
+app.UseStaticFiles();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Articles}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Articles}/{action=Index}/{id?}");
 
 
 app.Run();

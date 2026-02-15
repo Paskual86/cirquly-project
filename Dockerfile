@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy csproj and restore as distinct layer
-COPY ["Project Cirquly.csproj", "./"]
+COPY ["ProjectCirquly.csproj", "./"]
 RUN dotnet restore
 
 # Copy everything else and build
@@ -20,4 +20,4 @@ RUN dotnet publish -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "Project Cirquly.dll"]
+ENTRYPOINT ["dotnet", "ProjectCirquly.dll"]
